@@ -1,1 +1,50 @@
+// A clean, modern SaaS landing page layout
+export default function Home() {
+  return (
+    <div style={{ fontFamily: 'sans-serif', color: '#111827', backgroundColor: '#f9fafb', minHeight: '100vh' }}>
+      {/* Navigation */}
+      <nav style={{ display: 'flex', justifyContent: 'space-between', padding: '20px 40px', borderBottom: '1px solid #e5e7eb', backgroundColor: '#fff' }}>
+        <div style={{ fontWeight: 'bold', fontSize: '20px' }}>🚀 MyFreeSaaS</div>
+        <div>
+          <a href="#features" style={{ margin: '0 15px', color: '#4b5563', textDecoration: 'none' }}>Features</a>
+          <a href="#pricing" style={{ margin: '0 15px', color: '#4b5563', textDecoration: 'none' }}>Pricing</a>
+          <button style={{ backgroundColor: '#2563eb', color: '#fff', border: 'none', padding: '8px 16px', borderRadius: '6px', cursor: 'pointer' }}>Sign In</button>
+        </div>
+      </nav>
 
+      {/* Hero Section */}
+      <header style={{ textAlign: 'center', padding: '80px 20px', maxWidth: '800px', margin: '0 auto' }}>
+        <h1 style={{ fontSize: '48px', fontWeight: '800', marginBottom: '20px', letterSpacing: '-1px' }}>
+          Build your SaaS application <span style={{ color: '#2563eb' }}>completely free</span>.
+        </h1>
+        <p style={{ fontSize: '18px', color: '#4b5563', marginBottom: '30px', lineHeight: '1.6' }}>
+          Stop wasting time on configuration. Launch your app with pre-built user management, styled components, and connected databases instantly.
+        </p>
+        <button style={{ backgroundColor: '#2563eb', color: '#fff', border: 'none', padding: '14px 28px', borderRadius: '6px', fontSize: '16px', fontWeight: 'bold', cursor: 'pointer', boxShadow: '0 4px 6px -1px rgba(37, 99, 235, 0.2)' }}>
+          Get Started For Free
+        </button>
+      </header>
+
+      {/* Pricing Section Grid */}
+      <section id="pricing" style={{ padding: '60px 20px', backgroundColor: '#fff', borderTop: '1px solid #e5e7eb' }}>
+        <h2 style={{ textAlign: 'center', fontSize: '32px', marginBottom: '40px' }}>Simple, transparent plans</h2>
+        <div style={{ display: 'flex', gap: '30px', justifyContent: 'center', maxWidth: '900px', margin: '0 auto', flexWrap: 'wrap' }}>
+          {/* Free Tier */}
+          <div style={{ border: '1px solid #e5e7eb', padding: '30px', borderRadius: '12px', width: '280px', textAlign: 'center' }}>
+            <h3>Hobbyist</h3>
+            <div style={{ fontSize: '36px', fontWeight: 'bold', margin: '20px 0' }}>$0<span style={{ fontSize: '16px', color: '#6b7280' }}>/mo</span></div>
+            <p style={{ color: '#4b5563', minHeight: '60px' }}>Perfect for prototyping and building your initial user base.</p>
+            <button style={{ width: '100%', padding: '10px', borderRadius: '6px', border: '1px solid #2563eb', color: '#2563eb', backgroundColor: '#fff', fontWeight: 'bold', cursor: 'pointer' }}>Deploy Free</button>
+          </div>
+          {/* Pro Tier */}
+          <div style={{ border: '2px solid #2563eb', padding: '30px', borderRadius: '12px', width: '280px', textAlign: 'center', relative: 'true', boxShadow: '0 10px 15px -3px rgba(0, 0, 0, 0.05)' }}>
+            <h3>Pro Scale</h3>
+            <div style={{ fontSize: '36px', fontWeight: 'bold', margin: '20px 0' }}>$29<span style={{ fontSize: '16px', color: '#6b7280' }}>/mo</span></div>
+            <p style={{ color: '#4b5563', minHeight: '60px' }}>Advanced features, custom systems, and remove branding barriers.</p>
+            <button style={{ width: '100%', padding: '10px', borderRadius: '6px', border: 'none', color: '#fff', backgroundColor: '#2563eb', fontWeight: 'bold', cursor: 'pointer' }}>Upgrade Now</button>
+          </div>
+        </div>
+      </section>
+    </div>
+  );
+}
